@@ -5,6 +5,7 @@ var slides = [];
 class slide {
     constructor(){
         this.obs = [];
+        slides.push(this);
     }
     addObs(...obs){
         obs.forEach((ob)=>
