@@ -4,11 +4,11 @@ var slides = [
     [],
     []
 ];
-
+var currentSlideIdx = 0;
 class slide {
     constructor(duration, idx, ...obs){
         this.duration = duration;
-        this.obs = [];
+        this.obs = $([]);
         this.idx = idx;
         this.prevIdx = idx - 1;
         this.nextIdx = idx + 1;
@@ -32,6 +32,7 @@ class slide {
     }
     next(){
         slides[nextIdx].play();
+        currentSlideIdx = this.nextIdx;
     }
     play(){
 
@@ -42,4 +43,22 @@ class slide {
         )
         slides[prevIdx].play();
     }
+}
+
+
+///spaghetti!!!
+
+
+var titleSlide = {
+    play: () => {
+        this.obs.each(popIn);
+    }
+}
+
+function popIn($elem) {
+
+}
+
+function writeIn($elem){
+    
 }
