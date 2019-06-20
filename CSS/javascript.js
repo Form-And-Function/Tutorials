@@ -3,9 +3,11 @@ var obs = [];
 var slides = [];
 
 class slide {
-    constructor(){
+    constructor(...obs){
         this.obs = [];
+        this.addObs(obs);
         slides.push(this);
+
     }
     addObs(...obs){
         obs.forEach((ob)=>
@@ -23,3 +25,4 @@ class slide {
         this.obs.push(svg);
     }
 }
+
