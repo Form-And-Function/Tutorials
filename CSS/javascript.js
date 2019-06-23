@@ -65,7 +65,7 @@ function popIn($elem, width, delay = 0) {
 }
 
 function writeIn($elem){
-
+    
 }
 
 const darkPink = "#af0585",
