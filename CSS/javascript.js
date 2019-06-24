@@ -65,7 +65,7 @@ function popIn($elem, width, delay = 0) {
 }
 
 function writeIn($elem){
-    
+
 }
 
 const darkPink = "#af0585",
@@ -108,7 +108,7 @@ titleSlide.obscircles = [
     draw.circle(1).move("0vw", "30vh").addClass('.introCircle'),
     draw.circle(1).move("90vw", "10vh").addClass('.introCircle'),
     draw.circle(1).move("70vw", "50vh").addClass('.introCircle'),
-    draw.
+    
 ];
 
 var optionsSlide = new slide();
@@ -117,8 +117,8 @@ optionsSlide.obs = [
         $('<p>Give the</p>'),
         dropdown(),
         $('<p>a</p>')
-    )
-    $('<p>that's</p>')
+    ),
+    $("<p>that's</p>")
 ];
 
 function dropdown(...strs){
