@@ -74,6 +74,16 @@ lightGray = "#999"
 magenta = "#8700b89"
 lilac = "#a971ce";
 
+//PLAYPEN 
+anime({
+    targets: 'div.box.red',
+    translateY: [
+        {value: 300, duration: 500},
+        {value: 0, duration: 800}
+    ],
+    loop: true
+});
+
 ///spaghetti!!!
 
 
