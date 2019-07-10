@@ -17,3 +17,84 @@
     background:black;
     position: relative;
 }
+
+/******** **/
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+:root {
+  --light-accent: #FF1493;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.flexWrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottomHalf {
+  padding: 5vw;
+  margin: 3vw;
+}
+
+.topHalf {
+  border-bottom: 2vh solid black;
+  padding: 2vw;
+}
+
+* {
+  font-family: 'Courgette', cursive;
+  font-size: 4vh;
+}
+
+.dropDown {
+  height: 5vh;
+  width: 30vw;
+  padding: 0 1vw;
+  display: inline-block;
+}
+
+.dropDown>.fill {
+  text-align: center;
+  color: var(--light-accent);
+  font-size: 4vh;
+  transform-origin: 100% 100%;
+  transition: 1s;
+  height: 5vh;
+  background: black;
+  transform: scaleY(0.2);
+}
+
+.dropDown:hover>.fill {
+  transform: scaleY(1);
+}
+
+.dropDown>.option {
+  font-size: 4vh;
+  position: absolute;
+  transition: 0.5s;
+  border: none;
+  background: black;
+  color: white;
+  width: 30vw;
+  height: 5vh;
+  transform-origin: 0 0;
+  transform: scaleY(0);
+  display: none;
+  z-index: 2;
+  box-sizing: border-box;
+  border-color: var(--light-accent);
+  border-style: solid;
+  border-width: 0;
+}
+
+.dropDown>.option:hover {
+  background: var(--light-accent);
+}
